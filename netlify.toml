@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Next.js 16 requires a modern Node runtime
+  NODE_VERSION = "20"
+
+# Netlify's official Next.js runtime (serves App Router + API routes as functions)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
